@@ -57,7 +57,7 @@ and expand it using `vconcat'"
  elisp-koans/vectors-list-to-bool-vector ()
  "you must complete `list-to-bool-vector'"
  (should (bool-vector-p (list-to-bool-vector '(nil nil t t nil))))
- (should-not (aref (list-to-bool-vector '(nil))))
+ (should-not (aref (list-to-bool-vector '(nil)) 0))
  (should (aref (list-to-bool-vector '(nil t)) 1))
  (should (equal 8 (length (list-to-bool-vector '(nil nil t t nil nil t t))))))
 
